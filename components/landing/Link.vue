@@ -30,7 +30,7 @@ const styles = {
   <NuxtLink
     :href="href"
     :class="[
-      'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
+      'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 text-lg',
       block && 'w-full',
       sizes[size],
       styles[styleName],

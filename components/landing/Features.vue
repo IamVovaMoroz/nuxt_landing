@@ -1,53 +1,71 @@
 <script setup>
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Accelerated Product Development",
     description:
-      "Build your site using Vue, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Achieve your product goals faster than ever with our automated solutions and dedicated team, ensuring efficient transitions from concept to reality.",
+    icon: "bx:rocket",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Open-Source Automation Tools",
     description:
-      "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Streamline your publishing process with our open-source tools, bringing your product to market swiftly within a transparent, community-driven environment.",
+    icon: "bx:world",
   },
   {
-    title: "On-Demand Components",
+    title: "Focused on SaaS Product Delivery",
     description:
-      "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Specializing in SaaS product delivery, our automated tools help reduce costs while ensuring secure, scalable, and high-quality products.",
+    icon: "bx:package",
   },
   {
-    title: "Broad Integration",
+    title: "Self-Maintenance with Open-Source Tools",
     description:
-      "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Our open-source tools provide the flexibility to maintain and customize your product independently after deployment.",
+    icon: "bx:wrench",
   },
   {
-    title: "SEO Enabled",
+    title: "Plugin Management",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Effortlessly create, configure, and manage plugins with our intuitive system, making it simple to extend your product's functionality.",
+    icon: "bx:cog",
   },
   {
-    title: "Community",
+    title: "Automated Screen Building",
     description:
-      "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Customize your product with ease using our visual WYSIWYG editor, enabling screen and interface modifications without coding.",
+    icon: "bx:desktop",
   },
+  {
+    title: "Self-Hosted or Managed Solutions",
+    description:
+      "Choose between fully managed services or self-hosting options, allowing you to host the entire SaaS solution or manage specific microservices.",
+    icon: "bx:globe",
+  },
+  {
+    title: "Customized Development Solutions",
+    description:
+      "Our expert team offers tailored software solutions to meet your unique needs, delivering new features and custom integrations using our tools and expertise.",
+    icon: "bx:sort",
+  },
+  
 ];
 </script>
+<!-- https://boxicons.com/ for icons -->
 
-<template>
+<!-- <template>
   <div class="mt-16 md:mt-0">
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Everything you need to start a website
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mb-[30px]">
+      How QELOS Enhances Your SaaS Development Experience
     </h2>
-    <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
-    </p>
+
+<div class="relative w-full px-4 md:px-0 max-w-[90%] md:max-w-full mx-auto overflow-hidden">
+      <img class="transition-transform duration-300 ease-in-out hover:scale-105 object-cover w-full h-auto"
+    src="~/assets/img/laptop_big.webp"
+    alt="Laptop image" loading="eager" format="avif" />
+</div>
+
+ 
   </div>
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
@@ -63,4 +81,59 @@ const features = [
       </div>
     </div>
   </div>
+</template> -->
+
+<style>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0; /* Начальная непрозрачность для плавного появления */
+  animation: fadeIn 0.8s ease-in-out forwards;
+  animation-delay: calc(var(--stagger) * 0.1s); /* Задержка для эффекта "стопки" */
+}
+
+.fade-in-container > div {
+  --stagger: var(--index);
+}
+</style>
+
+
+<template>
+  <div class="mt-16 md:mt-0">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mb-[30px]">
+      How QELOS Enhances Your SaaS Development Experience
+    </h2>
+
+    <!-- <div class="relative w-full px-4 md:px-0 max-w-[90%] md:max-w-full mx-auto overflow-hidden">
+      <img class="transition-transform duration-300 ease-in-out hover:scale-105 object-cover w-full h-auto"
+        src="~/assets/img/laptop_big.webp"
+        alt="Laptop image" loading="eager" format="avif" />
+    </div> -->
+  </div>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 fade-in-container">
+    <div v-for="(item, index) in features" :key="index" :style="{ '--index': index }" class="flex gap-4 items-start fade-in">
+      <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
+        <Icon class="text-white" :name="item.icon" />
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">{{ item.title }}</h3>
+        <p class="text-slate-500 mt-2 leading-relaxed">
+          {{ item.description }}
+        </p>
+      </div>
+    </div>
+    
+  </div>
+  
 </template>
+

@@ -1,31 +1,38 @@
 <template>
   <footer class="my-20">
-    <p class="text-center text-sm text-slate-500">
-      Copyright © {{ new Date().getFullYear() }} Nuxtship. All rights reserved.
-    </p>
-    <!--
-      Can we ask you a favor 🙏
-      Please keep this backlink on your website if possible.
-    -->
-    <p class="text-center text-xs text-slate-500 mt-1">
-      Made by
-      <a
-        href="https://github.com/Gr33nW33n"
-        target="_blank"
-        rel="noopener"
-        class="hover:underline"
-      >
-        Gr33nW33n
-      </a>
-      with attribution to
-      <a
-        href="https://web3templates.com"
-        target="_blank"
-        rel="noopener"
-        class="hover:underline"
-      >
-        Web3Templates
-      </a>
-    </p>
+    <div class="flex flex-col items-center">
+      <!-- Copyright -->
+      <p class="text-center text-sm text-slate-500">
+        Copyright © {{ new Date().getFullYear() }} Qelos. All rights reserved.
+      </p>
+    
+      <div class="flex gap-6 mt-6">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/qelos/" target="_blank" rel="noopener"
+          class="flex items-center text-gray-600 hover:text-gray-900">
+          <IconsLinkedinIcon class="w-8 h-8" />
+          <span class="sr-only">LinkedIn</span>
+        </a>
+        
+        <!-- GitLab Repo -->
+        <a href="https://gitlab.com/qelos" target="_blank" rel="noopener"
+          class="flex items-center text-gray-600 hover:text-gray-900">
+          <IconsGitlabIcon class="w-8 h-8" />
+          <span class="sr-only">GitLab Repository</span>
+        </a>
+        <!-- Documentation -->
+        <a href="https://docs.qelos.io/" target="_blank" rel="noopener"
+          class="flex items-center text-gray-600 hover:text-gray-900">
+          <IconsDocsIcon class="w-8 h-8" />
+          <span class="sr-only">Documentation</span>
+        </a>
+         <!-- Discord -->
+         <a href="https://discord.gg/5KvhSesM" target="_blank" rel="noopener"
+          class="flex items-center text-gray-600 hover:text-gray-900">
+          <IconsDiscordIcon class="w-8 h-8" />
+          <span class="sr-only">Discord</span>
+        </a>
+      </div>
+    </div>
   </footer>
 </template>
