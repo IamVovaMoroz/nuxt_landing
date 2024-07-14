@@ -13,6 +13,7 @@
 </template>
 
 <style>
+
 @keyframes typing-unique {
   from {
     width: 0;
@@ -33,7 +34,7 @@
 
 .typing-animation-unique {
   overflow: hidden;
-  border-right: .1em solid white; /* цвет курсора */
+  border-right: .1em solid white;
   white-space: nowrap;
   letter-spacing: .15em;
   animation:

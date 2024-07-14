@@ -1,6 +1,6 @@
-# Nuxtship - Nuxt SAAS Starter Website Template
+# Qelos - Nuxt SAAS Starter Website Template
 
-Nuxtship is a free starter nuxt website template for saas, startups, marketing websites & landing pages. Built with Nuxt & TailwindCSS.
+Qelos is a free starter nuxt website template for saas, startups, marketing websites & landing pages. Built with Nuxt & TailwindCSS.
 
 This Free Template is sponsored by [Gr33nW33n](https://github.com/Gr33nW33n)
 
@@ -12,7 +12,7 @@ If you like my work please feel free to
 
 ## Live Demo
 
-**[https://nuxtship.netlify.app/](https://nuxtship.netlify.app/)**
+**[https://Qelos.netlify.app/](https://Qelos.netlify.app/)**
 
 ## Built with Nuxt 3 Minimal Starter
 
