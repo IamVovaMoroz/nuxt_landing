@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/user/Desktop/qelos_landing_page_deploy/website/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
