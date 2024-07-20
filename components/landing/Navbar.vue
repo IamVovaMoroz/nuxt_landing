@@ -1,18 +1,9 @@
 <script setup>
 const menuitems = [
-  // {
-  //   title: "Docs",
-  //   path: "https://docs.qelos.io/",
-  //   target: "_blank",
-  // },
   {
     title: "Home",
     path: "/",
   },
-  // {
-  //   title: "Pricing",
-  //   path: "/pricing",
-  // },
   {
     title: "About",
     path: "/about",
@@ -53,7 +44,7 @@ const open = ref(false);
           <li v-for="item of menuitems" :key="item.title" class="relative group">
             <a :href="item.path" :target="item.target || '_self'"
               :rel="item.target === '_blank' ? 'noopener noreferrer' : ''"
-              class="flex lg:px-3 py-2 text-lg text-gray-600 hover:text-gray-900">
+              class="relative inline-block py-2 text-lg text-gray-600 hover:text-gray-900">
               {{ item.title }}
               <span class="underline-effect"></span>
             </a>
@@ -61,22 +52,27 @@ const open = ref(false);
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
           <!-- Mobile menu -->
-          <LandingLink href="https://docs.qelos.io/getting-started/intro.html" styleName="muted" block size="md">Docs</LandingLink>
+          <LandingLink href="https://docs.qelos.io/getting-started/intro.html" styleName="muted" block size="md">Docs
+          </LandingLink>
           <LandingLink href="https://gitlab.com/qelos" size="md" block>Gitlab</LandingLink>
         </div>
       </nav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <a href="https://gitlab.com/qelos" target="_blank"
+          <a href="https://docs.qelos.io/getting-started/intro.html" target="_blank"
             class="flex items-center text-lg text-gray-600 hover:text-gray-900">
             <IconsDocsIcon class="w-7 h-7 mr-2" />
             Docs
           </a>
-          <a href="https://docs.qelos.io/getting-started/intro.html" target="_blank" class="flex items-center text-lg text-gray-600 hover:text-gray-900">
+
+          <a href="https://gitlab.com/qelos" target="_blank"
+            class="flex items-center text-lg text-gray-600 hover:text-gray-900">
             <IconsGitlabIcon class="w-7 h-7 mr-2" />
             GitLab
           </a>
-          <a href="https://discord.com/channels/1105863727854649464/1249006082660237434" target="_blank" class="flex items-center text-lg text-gray-600 hover:text-gray-900">
+
+          <a href="https://discord.com/channels/1105863727854649464/1249006082660237434" target="_blank"
+            class="flex items-center text-lg text-gray-600 hover:text-gray-900">
             <IconsDiscordIcon class="w-7 h-7 mr-2" />
             Discord
           </a>
@@ -88,18 +84,17 @@ const open = ref(false);
 
 <style scoped>
 .underline-effect {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: inline-block;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: currentColor;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
+  margin-top: -4px;
 }
 
-.group:hover .underline-effect {
+a:hover .underline-effect {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

@@ -26,9 +26,11 @@ defineProps(["plan"]);
       </div>
       <ul class="grid mt-8 text-left gap-y-4">
         <li
-          v-for="item of plan.features"
+          v-for="(item, index) in plan.features"
+          :key="index"
           class="flex items-start gap-3 text-gray-800"
         >
+
           <LandingTick className="w-6 h-6" />
           <span>{{ item }}</span>
         </li>

@@ -25,15 +25,13 @@ const styles = {
 </script>
 
 <template>
-  <button
-    :class="[
-      'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
-      block && 'w-full',
-      sizes[size],
-      styles[styleName],
-      className,
-    ]"
-  >
+  <button :class="[
+    'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
+    block && 'w-full',
+    sizes[size],
+    styles[styleName],
+    className,
+  ]">
     <slot />
   </button>
 </template>
