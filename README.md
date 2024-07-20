@@ -1,15 +1,5 @@
 # Qelos - Nuxt SAAS Starter Website Template
 
-Qelos is a free starter nuxt website template for saas, startups, marketing websites & landing pages. Built with Nuxt & TailwindCSS.
-
-This Free Template is sponsored by [Gr33nW33n](https://github.com/Gr33nW33n)
-
-If you like my work please feel free to
-
-<a href="https://www.paypal.com/paypalme/jakobaichmayr" target="_blank">
-  <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="260" />
-</a>
-
 ## Live Demo
 
 **[https://Qelos.netlify.app/](https://Qelos.netlify.app/)**
