@@ -3,7 +3,7 @@
 // App Config
 import type { Defu } from 'defu'
 
-import type { default as appConfig0 } from "C:/Users/user/Desktop/qelos_landing_page_deploy/website/app.config";
+import type { default as appConfig0 } from "C:/Users/user/Desktop/qelos_landing_page/app.config";
 
 type UserAppConfig = Defu<{}, [typeof appConfig0]>
 

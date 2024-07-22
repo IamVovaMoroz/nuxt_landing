@@ -15,6 +15,6 @@ if (import.meta.hot) {
   })
 }
 
-import cfg0 from "C:/Users/user/Desktop/qelos_landing_page_deploy/website/app.config.ts"
+import cfg0 from "C:/Users/user/Desktop/qelos_landing_page/app.config.ts"
 
 export default /*@__PURE__*/ defuFn(cfg0, inlineConfig)

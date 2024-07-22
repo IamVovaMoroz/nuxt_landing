@@ -1,7 +1,7 @@
 
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
-import cfg0 from "C:/Users/user/Desktop/qelos_landing_page_deploy/website/app.config"
+import cfg0 from "C:/Users/user/Desktop/qelos_landing_page/app.config"
 
 declare const inlineConfig = {
   "nuxt": {
